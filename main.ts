@@ -9,15 +9,15 @@ namespace cobit_base {
 	 *  Read ultrasonic sensor 
 	 */
     //% weight=90
-    //% blockId="cobit-base_readUltraSonic" block="read Ultrasoninc sensor with trigger %trigger| and ech %echo|"
-    export function readUltraSonic(triggerPin: DigitalPin, echoPin: DigitalPin): number {
+    //% blockId="cobit-base_readUltraSonic" block="read Ultrasoninc sensor"
+    export function readUltraSonic(): number {
         let value = 0
-        pins.digitalWritePin(DigitalPin.P1, 0)
+        pins.digitalWritePin(DigitalPin.P13, 0)
         basic.pause(2)
-        pins.digitalWritePin(DigitalPin.P1, 1)
+        pins.digitalWritePin(DigitalPin.P13, 1)
         basic.pause(10)
-        pins.digitalWritePin(DigitalPin.P1, 0)
-        value = pins.pulseIn(DigitalPin.P2, PulseValue.High) / 58
+        pins.digitalWritePin(DigitalPin.P13, 0)
+        value = pins.pulseIn(DigitalPin.P14, PulseValue.High) / 58
         return value
     }
 
