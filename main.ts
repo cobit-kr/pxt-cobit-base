@@ -46,8 +46,8 @@ namespace cobit_base {
     //% weight=90
     //% blockId="cobit-base_stopMotor" block="motor stop"
     export function motorStop(): void {
-        pins.digitalWritePin(DigitalPin.P15, 1)
-        pins.analogWritePin(AnalogPin.P16, 1)
+        pins.digitalWritePin(DigitalPin.P16, 1)
+        pins.analogWritePin(AnalogPin.P15, 1)
     }
     /**
 	 *  Read ultrasonic sensor 
