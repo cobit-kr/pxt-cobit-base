@@ -2,7 +2,7 @@
  * Functions to operate the moto:bit
  */
 //% color=#f44242 icon="\uf1b9" block="cobit-base"
-namespace cobit-base {
+namespace cobit_base {
 
 	
     /**
