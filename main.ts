@@ -69,7 +69,7 @@ namespace cobit_base {
 	 * Moves the servo.
 	 */
     //% weight=90
-    //% blockId="cobit-base_rotateServo" block="rotate servo %motor motor| degree"
+    //% blockId="cobit-base_rotateServo" block="rotate servo %degree| degree"
     export function rotateServo(degree: number): void {
         if (degree > 180) {
             degree = 180
