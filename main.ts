@@ -53,7 +53,7 @@ namespace cobit_base {
 	 *  Read ultrasonic sensor 
 	 */
     //% weight=90
-    //% blockId="cobit-base_readUltraSonic" block="read Ultrasoninc sensor"
+    //% blockId="cobit-base_readUltraSonic" block="read ultrasoninc sensor"
     export function readUltraSonic(): number {
         let value = 0
         pins.digitalWritePin(DigitalPin.P13, 0)
@@ -80,6 +80,17 @@ namespace cobit_base {
             degree = 0
         }
         pins.servoWritePin(AnalogPin.P15, degree)
+    }
+
+    /**
+	 *  Read IR sensor 
+	 */
+    //% weight=90
+    //% blockId="cobit-base_readIRsensor" block="read IR sensor"
+    export function readIRsensor(): number {
+        let value = 0
+        value = pins.digitalReadPin(DigitalPin.P8)
+        return value
     }
 
 
