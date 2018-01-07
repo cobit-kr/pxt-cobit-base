@@ -65,5 +65,20 @@ namespace cobit_base {
         return value
     }
 
+    /**
+	 * Moves the servo.
+	 */
+    //% weight=90
+    //% blockId="cobit-base_rotateServo" block="rotate servo"
+    export function rotateServo(degree: number): void {
+        if (degree > 180) {
+            degree = 180
+        }
+        if (degree < 0) {
+            degree = 0
+        }
+        pins.servoWritePin(AnalogPin.P15, degree)
+    }
+
 
 }
