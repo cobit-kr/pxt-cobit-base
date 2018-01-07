@@ -115,5 +115,16 @@ namespace cobit_base {
         return value
     }
 
+    /**
+	 *  Read potentiometer
+	 */
+    //% weight=90
+    //% blockId="cobit-base_readPotentiometer" block="read potentiometer"
+    export function readPotentiometer(): number {
+        let value = 0
+        value = pins.analogReadPin(AnalogPin.P2)
+        return value
+    }
+
 
 }
