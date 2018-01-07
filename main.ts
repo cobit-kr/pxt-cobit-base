@@ -67,8 +67,10 @@ namespace cobit_base {
 
     /**
 	 * Moves the servo.
+     * @param degree servo rotation degree 
 	 */
     //% weight=90
+    //% degree.min=0 degree.max=180
     //% blockId="cobit-base_rotateServo" block="rotate servo %degree|degree"
     export function rotateServo(degree: number): void {
         if (degree > 180) {
