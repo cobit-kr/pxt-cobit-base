@@ -93,5 +93,27 @@ namespace cobit_base {
         return value
     }
 
+    /**
+	 *  Read joystick Y  
+	 */
+    //% weight=90
+    //% blockId="cobit-base_readJoystickY" block="read joystick Y"
+    export function readJoystickY(): number {
+        let value = 0
+        value = pins.analogReadPin(AnalogPin.P1)
+        return value
+    }
+
+    /**
+	 *  Read joystick X 
+	 */
+    //% weight=90
+    //% blockId="cobit-base_readJoystickX" block="read joystick X"
+    export function readJoystickX(): number {
+        let value = 0
+        value = pins.analogReadPin(AnalogPin.P2)
+        return value
+    }
+
 
 }
