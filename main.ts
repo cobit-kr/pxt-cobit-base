@@ -1,7 +1,7 @@
 enum MotorDirection {
-    //% block="CCW"
+    //% block="반시계"
     CCW = 0,
-    //% block="CW"
+    //% block="시계"
     CW = 1
 }
 /**
